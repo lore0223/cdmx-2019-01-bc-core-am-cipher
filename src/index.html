@@ -2,14 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Caesar Cipher Secrets</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
-      <p>vamos si se puede!!</p>
-      <p >haciendo mas cambios</p>
+      <h1>"Secrets"</h1>
+      <p>Escribe mensajes con la seguridad <br>
+        de que sólo la persona que tú elijas, <br>
+        ¡Lo pueda leer!
+      </p>
+      <p >Con Secrets <br>
+        ¡Haz más seguras tus contraseñas!
+      </p>
+      <p>¡Personaliza tu código! <br>
+        Con la opción de desplazamiento 
+        harás tu encriptado único. <br>
+        Sólo tú, conocerás el número <br>
+        de posiciones recorridas que tendrá tu mensaje.<br>
+        *Conoce más acerca de este encriptado <button id= explicación>Leer más</button>
+      </p>
+      <textarea name="textarea" rows="20" cols="60" required>Ingresa aquí tu mensaje</textarea><input type="number" id= 'offset' min= '1' max='99'>Desplazamiento (1-99)<br>
+<button id= 'encriptar'>Encriptar</button> 
+<button id = 'desencriptar'>Desencriptar</button>
+
+
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
