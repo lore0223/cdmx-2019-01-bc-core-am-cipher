@@ -3,16 +3,32 @@ const box2=document.getElementById('box2');
 const box3=document.getElementById('box3');
 const mensaje=document.getElementById('mensaje-usuario');
 const encriptar=document.getElementById('encriptar');
+const desencriptar=document.getElementById('desencriptar');
 const offset= document.getElementById('offset');
 let nuevoCifrado='';
 
-const cambio1= ()=>{
+encriptar.addEventListener('click',()=>{
+   box1.classList.add('hideElement');
+   box2.classList.remove('hideElement');
+   const cifrar= document.getElementById('mensaje-usuario').value;
+   const desplazamiento=parseInt(document.getElementById('offset').value);
+   console.log(desplazamiento);
+   
+    cipher.encode(cifrar,desplazamiento);
     
-    encriptar.addEventListener('click')
-        Box1.classList.add('hideElement')
-    Box2.classList.remove('hideElement')
+})
 
-}
+desencriptar.addEventListener('click',()=>{
+   box1.classList.add('hideElement');
+   box2.classList.remove('hideElement');
+   const descifrar=document.getElementById('mensaje-usuario').value;
+   const desplazamiento=document.getElementById('offset').value;
+
+
+})
+
+    
+   
 
 
 
