@@ -1,31 +1,27 @@
 //variables globales
-const box1=document.getElementById('box1');
-const box2=document.getElementById('box2');
-const box3=document.getElementById('box3');
-const mensaje=document.getElementById('mensaje-usuario');
+const box1=document.getElementById('box1');//caja principal
+const box2=document.getElementById('box2');//caja muestra el cifrado
+const box3=document.getElementById('box3');//caja que muestra el descifrado
 const encriptar=document.getElementById('encriptar');
 const desencriptar=document.getElementById('desencriptar');
 const volver1= document.getElementById('volver1');
 const volver2=document.getElementById('volver2');
-const offset= document.getElementById('offset');
-let nuevoCifrado='';
-
+const mnsjEncriptado=document.getElementById('mnsj-encriptado')
 encriptar.addEventListener('click',()=>{
    box1.classList.add('hideElement');
    box2.classList.remove('hideElement');
-   const cifrar= document.getElementById('mensaje-usuario').value;
-   const desplazamiento=parseInt(document.getElementById('offset').value);
-   console.log(desplazamiento);
+   const mensajeCifrado= document.getElementById('mensaje-usuario').value; 
+   const offset=parseInt(document.getElementById('offset').value);
+
    
-   // cipher.encode(cifrar,desplazamiento);
-    
+  const mensajito=window.cipher.encode(offset,mensajeCifrado);
+  mnsjEncriptado.innerHTML=mensajito;
 })
 
 desencriptar.addEventListener('click',()=>{
    box1.classList.add('hideElement');
    box2.classList.remove('hideElement');
-   const descifrar =document.getElementById('mensaje-usuario').value;
-   const desplazamiento=parseInt(document.getElementById('offset').value);
+
 
 //cipher.decode(descifrar,desplazamiento);
 })
@@ -46,21 +42,6 @@ volver2.addEventListener('click',()=>{
 
 
 
-// obtiene el codigo ascii y convierte a mayusculas
-function mnsj(){
-    let mensajeObtenido= mensaje.value;
-let mayuscula= mensajeObtenido.toUpperCase();
-let mayus=mayuscula.charCodeAt();
-
-for(let i=0; i<mayuscula.length; i++){
-    let letraAscii=mayuscula.charCodeAt(i);
-    let formula=(letraAscii-65+ offset)%26+65;
-    let resultado= String.fromCharCode(formula);
-    nuevoCifrado += resultado;
-}
-alert (nuevoCifrado);
-
-};
 
 
 
