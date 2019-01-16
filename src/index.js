@@ -14,17 +14,17 @@ encriptar.addEventListener('click',()=>{
    const desplazamiento=parseInt(document.getElementById('offset').value);
    console.log(desplazamiento);
    
-    cipher.encode(cifrar,desplazamiento);
+   // cipher.encode(cifrar,desplazamiento);
     
 })
 
 desencriptar.addEventListener('click',()=>{
    box1.classList.add('hideElement');
    box2.classList.remove('hideElement');
-   const descifrar=document.getElementById('mensaje-usuario').value;
-   const desplazamiento=document.getElementById('offset').value;
+   const descifrar =document.getElementById('mensaje-usuario').value;
+   const desplazamiento=parseInt(document.getElementById('offset').value);
 
-
+//cipher.decode(descifrar,desplazamiento);
 })
 
     
