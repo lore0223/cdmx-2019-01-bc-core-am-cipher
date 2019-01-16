@@ -1,9 +1,12 @@
+//variables globales
 const box1=document.getElementById('box1');
 const box2=document.getElementById('box2');
 const box3=document.getElementById('box3');
 const mensaje=document.getElementById('mensaje-usuario');
 const encriptar=document.getElementById('encriptar');
 const desencriptar=document.getElementById('desencriptar');
+const volver1= document.getElementById('volver1');
+const volver2=document.getElementById('volver2');
 const offset= document.getElementById('offset');
 let nuevoCifrado='';
 
@@ -27,6 +30,17 @@ desencriptar.addEventListener('click',()=>{
 //cipher.decode(descifrar,desplazamiento);
 })
 
+volver1.addEventListener('click',()=>{
+   box2.classList.add('hideElement');
+   box1.classList.remove('hideElement');
+})
+
+volver2.addEventListener('click',()=>{
+    box3.classList.add('hideElement');
+    box1.classList.remove('hideElement');
+ })
+ 
+ 
     
    
 
