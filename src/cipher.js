@@ -1,8 +1,6 @@
 window.cipher = {
   encode:(desplazamiento,cifrar) =>{
-  let mayusculas=cifrar.toUpperCase();//convirtiendo a mayusculas el mensaje
-  
-
+  let mayusculas=cifrar.toUpperCase();//convirtiendo a mayusculas el mensaje ingresado.
 //aqui vamos a iterar el mensaje y aplicarle la formula,
  //y convertir el resultado de la formula de nuevo a string
  // y obtener así el nuevo cifrado

@@ -1,4 +1,4 @@
-//variables globales
+//constantes globales
 const box1=document.getElementById('box1');//caja principal
 const box2=document.getElementById('box2');//caja muestra el cifrado
 const box3=document.getElementById('box3');//caja que muestra el descifrado
@@ -10,8 +10,8 @@ const mnsjEncriptado=document.getElementById('mnsj-encriptado');//mensaje cifrad
 const mnsjDesencriptado=document.getElementById('mnsj-desencriptado');//mensaje ya descifrado
 
 //el boton encriptar tiene la funcion de ocultar las cajas,obtiene el valor del input
-//ingresado por el usuario,al offset se le aplico el metodo parseInt por que el 
-//input number devuelve un string
+//ingresado por el usuario.Al offset se le aplico el metodo parseInt por que el 
+//input number devuelve un string.
 //por medio de window.cipher.encode invocamos la función y pasamos argumentos
 //con el innerHtml pintamos en la pantalla el resultado de la función
 encriptar.addEventListener('click',()=>{
@@ -20,7 +20,6 @@ encriptar.addEventListener('click',()=>{
    const mensajeCifrado= document.getElementById('mensaje-usuario').value; 
    const offset=parseInt(document.getElementById('offset').value);
 
-   
   const mensajito=window.cipher.encode(offset,mensajeCifrado);
   mnsjEncriptado.innerHTML=mensajito;
 })
@@ -35,16 +34,16 @@ desencriptar.addEventListener('click',()=>{
    mnsjDesencriptado.innerHTML=mensajitoRevelado;
 
 
-
-
 })
 
 volver1.addEventListener('click',()=>{
+   location.reload();
    box2.classList.add('hideElement');
    box1.classList.remove('hideElement');
 })
 
 volver2.addEventListener('click',()=>{
+   location.reload()
     box3.classList.add('hideElement');
     box1.classList.remove('hideElement');
  })

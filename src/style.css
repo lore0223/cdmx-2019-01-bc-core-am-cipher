@@ -1,3 +1,7 @@
 .hideElement{
 display:none
 };
+
+#mensaje-usuario{
+    text-align:left;
+}
