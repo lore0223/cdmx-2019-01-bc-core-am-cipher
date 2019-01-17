@@ -16,8 +16,19 @@ let nuevoCifrado= '';
   return nuevoCifrado;
   },
     
-  decode:() => {
+  decode:(desplazamiento2,descifrar) => {
+    let mayusculas=descifrar.toUpperCase();
 
+    let mnsjDescifrado='';
+
+    for(let i= 0;i<mayusculas.length; i++){
+      const letraAscii=mayusculas.charCodeAt(i);
+      const formulaDescifrar=(letraAscii+65-parseInt(desplazamiento2))%26+65;
+      const resultado2=String.fromCharCode(formulaDescifrar);
+       mnsjDescifrado += resultado2;
+      
+    }
+return mnsjDescifrado
   }
   // obtiene el codigo ascii y convierte a mayusculas
 /*function mnsj(){
