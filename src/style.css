@@ -2,6 +2,9 @@
 display:none
 };
 
-#mensaje-usuario{
-    text-align:left;
-}
+
+body{
+    background-image:url('https://i.ibb.co/TT1bHG5/fondito-chido.jpg');
+    background-size: 100% 100%;
+    background-attachment:fixed;
+};
