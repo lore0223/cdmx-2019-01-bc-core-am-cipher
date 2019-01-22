@@ -1,34 +1,60 @@
 window.cipher = {
   encode: (desplazamiento, cifrar) => {
-    let mayusculas = cifrar.toUpperCase(); //convirtiendo a mayusculas el mensaje ingresado.
+     
     let nuevoCifrado = '';
     
     //aqui vamos a iterar el mensaje,convertir la letra a codigo ascii y aplicarle la formula,
     // convertir el resultado de la formula de nuevo a string
     // y obtener así el nuevo cifrado
     
-    for (let i = 0; i < mayusculas.length; i++) {
-      const letraAscii = mayusculas.charCodeAt(i);
-      const formula = (letraAscii - 65 + parseInt(desplazamiento)) % 26 + 65;
+    for (let i = 0; i < cifrar.length; i++) {
+      const letraAscii = cifrar.charCodeAt(i);
+
+       if(letraAscii>=65 && letraAscii<= 90){
+        const formula=(letraAscii - 65 + parseInt(desplazamiento)) % 26 + 65;
+        const resultado=String.fromCharCode(formula);
+        nuevoCifrado += resultado;
+      }
+      else if(letraAscii>=97 && letraAscii <=122){
+      const formula = (letraAscii - 97 + parseInt(desplazamiento)) % 26 + 97;
       const resultado = String.fromCharCode(formula);
       nuevoCifrado += resultado;
     }
-    return nuevoCifrado;
-  },
+    else{
+      const resultado=String.fromCharCode(letraAscii);
+      nuevoCifrado += resultado;
+    }
+    
+  }
+  return nuevoCifrado;
+},
    //función para decodificar el mensaje, basicamente se realizan los mismos pasos
    //y en la formula se invierte la resta por una suma y la suma por una resta.
   decode: (desplazamiento2, descifrar) => {
-    let mayusculas = descifrar.toUpperCase();
     let mnsjDescifrado = '';
 
-    for (let i = 0; i < mayusculas.length; i++) {
-      const letraAscii = mayusculas.charCodeAt(i);
-      const formulaDescifrar = (letraAscii + 65 - parseInt(desplazamiento2)) % 26 + 65;
-      const resultado2 = String.fromCharCode(formulaDescifrar);
-      mnsjDescifrado += resultado2;
+    for (let i = 0; i < descifrar.length; i++) {
+      const letraAscii = descifrar.charCodeAt(i);
 
+       if(letraAscii >= 65 && letraAscii <= 90){
+        const formulaDescifrar=(letraAscii+ 65 - parseInt(desplazamiento2)) % 26 + 65;
+        const resultado= String.fromCharCode(formulaDescifrar);
+        mnsjDescifrado += resultado;
+    
+      }
+      else if (letraAscii >= 97 && letraAscii <= 122){
+      const formulaDescifrar = (letraAscii+97-parseInt(desplazamiento2)) % 26 + 97;
+      const resultado= String.fromCharCode(formulaDescifrar);
+      mnsjDescifrado += resultado;
     }
-    return mnsjDescifrado
+   else{
+     const resultado=String.fromCharCode(letraAscii);
+     mnsjDescifrado += resultado;
+   }
+   
+    
+    
   }
-
+  return mnsjDescifrado;
+  }
 };
