@@ -43,7 +43,7 @@ window.cipher = {
     
       }
       else if (letraAscii >= 97 && letraAscii <= 122){
-      const formulaDescifrar = (letraAscii+97-parseInt(desplazamiento2)) % 26 + 97;
+      const formulaDescifrar = (letraAscii-122-parseInt(desplazamiento2)) % 26 + 122;
       const resultado= String.fromCharCode(formulaDescifrar);
       mnsjDescifrado += resultado;
     }
@@ -51,7 +51,7 @@ window.cipher = {
      const resultado=String.fromCharCode(letraAscii);
      mnsjDescifrado += resultado;
    }
-   
+
     
     
   }

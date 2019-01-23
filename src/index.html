@@ -8,32 +8,37 @@
 </head>
 
 <body>
-  <div id="box1">
+  <div id="contenedor">
+  
+  <header id="cabeza">
     <h1>"Cyber Secrets"</h1>
-    <p>Escribe mensajes con la seguridad <br>
+  </header>
+  <div id="box1">
+   <div id="introduccion"> <p>Escribe tus mensajes con la seguridad <br>
       de que sólo la persona que tú elijas, <br>
-      ¡Lo pueda leer!
+      ¡Los pueda leer!
     </p>
-    <p>Con Secrets <br>
+    <p>Con Cyber Secrets <br>
       ¡Haz más seguras tus contraseñas!
     </p>
     <p>¡Personaliza tu código! <br>
       Con la opción de desplazamiento
       harás tu encriptado único. <br>
-      Sólo tú, conocerás el número <br>
-      de posiciones recorridas que tendrá tu mensaje.<br>
+      Sólo tú,<br> 
+      conocerás el número de posiciones recorridas <br>
+      que tendrá tu mensaje.<br>
       *Conoce más acerca de este encriptado <button id="explicación">Leer más</button>
     </p>
-
-    <textarea id="mensaje-usuario" name="textarea" rows="16" cols="60" placeholder="Ingresa aquí tu mnsj"></textarea>
-    <input type="number" id="offset" min="1"> Desplazamiento <br>
+  </div>
+<div id="texto-ingresado">    
+    <textarea id="mensaje-usuario" name="textarea" rows="16" cols="50" placeholder="Ingresa aquí tu mnsj"></textarea><br>
+    <input type="number" id="offset"> <p>Desplazamiento</p> <br>
     <button id="encriptar">Encriptar</button>
     <button id="desencriptar">Desencriptar</button>
-
+  </div>
 
   </div>
   <div id="box2" class="hideElement">
-    <h1>"Secrets"</h1>
     <p>¡Listo! Tu mensaje es ahora más seguro</p>
     <span id="mnsj-encriptado"></span><br>
     <button id="volver1">Volver</button>
@@ -41,11 +46,12 @@
 
   </div>
   <div id="box3" class="hideElement">
-    <h1>"Secrets"</h1>
+
     <p>El mensaje que quieres leer dice:</p>
     <span id="mnsj-desencriptado"></span><br>
     <button id="volver2">Volver</button>
   </div>
+</div>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
