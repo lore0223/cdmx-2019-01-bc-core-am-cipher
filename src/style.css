@@ -43,8 +43,9 @@ header{
   textarea{
       width: 35%;
       float:left;
-      background: 0, 0,#BE766A;
+      background: url(https://st.depositphotos.com/1020422/3440/i/950/depositphotos_34400753-stock-photo-brown-letter-on-wooden-table.jpg);
       border-radius: 40px;
+      border: 5px solid #BE766A;
       padding:30px;
       margin-top:30px;
       margin-left:50px;
