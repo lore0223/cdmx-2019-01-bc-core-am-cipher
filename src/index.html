@@ -14,20 +14,22 @@
     <h1>"Cyber Secrets"</h1>
   </header>
   <div id="box1">
-   <div id="introduccion"> <p>Escribe tus mensajes con la seguridad <br>
+   <div id="introduccion"> <p>Con Cyber Secrets<br>
+     Escribe tus mensajes con la seguridad <br>
       de que sólo la persona que tú elijas, <br>
       ¡Los pueda leer!
     </p>
-    <p>Con Cyber Secrets <br>
-      ¡Haz más seguras tus contraseñas!
+    <p> Usa un Cyber Secret para hacer<br>
+      ¡más seguras tus contraseñas!
     </p>
     <p>¡Personaliza tu código! <br>
       Con la opción de desplazamiento
       harás tu encriptado único. <br>
       Sólo tú,<br> 
-      conocerás el número de posiciones recorridas <br>
+      conocerás el número de posiciones recorridas,
       que tendrá tu mensaje.<br>
-      *Conoce más acerca de este encriptado <button id="explicación">Leer más</button>
+    </p>
+      <p>*Conoce más acerca del encriptado de "Cyber Secrets" <button id="guia-usuario">Leer más</button>
     </p>
   </div>
 <div id="texto-ingresado">    
@@ -39,18 +41,53 @@
 
   </div>
   <div id="box2" class="hideElement">
-    <p>¡Listo! Tu mensaje es ahora más seguro</p>
-    <span id="mnsj-encriptado"></span><br>
+    <p>¡Listo! Tu mensaje sólo puede ser leído por la persona a quién se lo envíes.<br>
+    Recuerda copiar este código y enviarlo con el número de desplazamiento que elegiste.<br>
+    ¡Tus conversaciones serán mucho más divertidas y tus mensajes privados!
+  </p>
+    <p id="mnsj-encriptado"></p><br>
     <button id="volver1">Volver</button>
 
 
   </div>
   <div id="box3" class="hideElement">
 
-    <p>El mensaje que quieres leer dice:</p>
-    <span id="mnsj-desencriptado"></span><br>
+    <p>El mensaje que quieres desencriptar dice:</p>
+    <p id="mnsj-desencriptado"></p><br>
+    <p>Responde con un "Cyber Secret" y mantén tu respuesta privada</p>
     <button id="volver2">Volver</button>
   </div>
+<div id="box4" class="hideElement">
+  <p>
+¡Gracias por tu interés!<br>
+Aquí te explicaremos brevemente como funciona el encriptado <br>
+que utilizamos en "Cyber Secrets"
+  </p>
+<p>Un "Cyber Secret" funciona con un encriptado llamado "Cifrado César"<br>
+Si. ¡Exacto, como el emperador Romano!. Su historia tiene que ver con<br>
+la necesidad de transmitir mensajes seguros en el campo de batalla,<br>
+que el enemigo no pudiera interpretar.<br>
+El cifrado César es una de las técnicas más simples para cifrar un mensaje. <br>
+Es un tipo de cifrado por sustitución, <br>
+es decir que cada letra del texto original es reemplazada<br>
+por otra que se encuentra un número fijo de posiciones (desplazamiento) <br>
+más adelante en el mismo alfabeto.<br>
+</p>
+<p>Por ejemplo, si usamos un desplazamiento de 3 posiciones:</p>
+<p>
+- La letra A se cifra como D.<br>
+- La palabra CASA se cifra como FDVD.<br>
+</p>
+<span>¡Súper Sencillo! Pero efectivo.</span>
+
+<p>¡Así que ya sabes como funciona!<br>
+Ingresa tu mensaje, elije tu desplazamiento y empieza a <br>
+comunicarte de una manera secreta con quién tú quieras.  <br>
+¡Olvídate de que alguien más pueda leer tus conversaciones!.<br>
+  </p>
+  <button id="volver3">Volver</button>
+</div>
+  
 </div>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
