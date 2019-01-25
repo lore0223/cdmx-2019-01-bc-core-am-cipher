@@ -1,4 +1,4 @@
-#"Cyber Secrets"
+# "Cyber Secrets"
 
 Un "Cyber Secret" funciona con un encriptado llamado "Cifrado César".
 Si. ¡Exacto, como el emperador Romano!. 
@@ -22,11 +22,11 @@ Ingresa tu mensaje, elije tu desplazamiento y empieza a
 comunicarte de una manera secreta con quién tú quieras. 
 ¡Olvídate de que alguien más pueda leer tus conversaciones!.
 
-#¿Cómo comenzar a trabajar?
+# ¿Cómo comenzar a trabajar?
 Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
 repositorio que contiene el _boilerplate_.
 
-#Consideraciones Técnicas.
+# Consideraciones Técnicas.
 
 Para que el _boilerplate_ funcione correctamente necesitas tener descargado Node.js y Git.
 El _boilerplate_ incluye tests (pruebas) de ejemplo como punto de partida.
@@ -55,7 +55,7 @@ La lógica de "Cyber Secrets" está implementada en JavaScript (ES6).
 En este proyecto **NO** se utilizaron librerías o frameworks, sólo
 [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
 
-#Las pruebas unitarias
+# Las pruebas unitarias
 
 El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
 [htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
@@ -71,24 +71,24 @@ entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"
 En cuanto a reglas/guías de estilo en sí,
 usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 
-#User Experience (UX) y Diseño
+# User Experience (UX) y Diseño
 Si quieres conocer más acerca del proceso de diseño y UX de "Cyber Secrets"
 ingresa a esta liga.
 [Google Document(https://docs.google.com/document/d/1t85jjy19hQM7MPoeYAQ0Vor4GDjtI-coAV4E7HK1sjA/edit)]
 
-#Autor
+# Autor
 Karla Lorena Bellacetin Guido
 
-#Contribuciones 
-Diego Velez
-Shirley-starley
-Lupo Montero
-Developer Vilchez
-Gapox
+# Contribuciones 
+Diego Velez, 
+Shirley-starley,
+Lupo Montero,
+Developer Vilchez,
+Gapox.
 
-#Agradecimientos
+# Agradecimientos
 A mis compañeras de Squad gracias por su apoyo y paciencia, por su dispocisión y trabajo en equipo. Por que sin su ayuda no hubiera logrado este avance a tiempo.
-A mis coaches, gracias por su apoyo, por entender nuestros procesos y acompañarnos con una sonrisa.
+A mis coaches, gracias por su apoyo, por entender nuestros procesos y acompañarnos siempre con una sonrisa.
 
 
 
@@ -364,10 +364,10 @@ Herramientas:
 Esta sección está  para ayudarte a llevar un control de lo que vas completando.
 
 ### Parte Obligatoria
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
+* [x] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [x] `README.md` explica claramente quiénes son los usuarios y su relación con
   el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
+* [x] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
 * [x] Usa VanillaJS.
 * [x] No utiliza `this`.
@@ -377,7 +377,7 @@ Esta sección está  para ayudarte a llevar un control de lo que vas completando
 * [x] Pasa pruebas unitarias.
 * [x] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
   mínimo del 50% de _branches_.
-* [x]] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+* [x] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
   cifrado/descifrado.
 * [x] Interfaz permite escribir un texto para ser cifrado.
 * [x] Interfaz muestra el resultado del cifrado correctamente.
