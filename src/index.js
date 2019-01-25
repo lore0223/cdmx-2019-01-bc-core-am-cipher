@@ -23,7 +23,9 @@ encriptar.addEventListener('click', () => {
   box2.classList.remove('hideElement');
   const mensajeCifrado = document.getElementById('mensaje-usuario').value;
   const offset = parseInt(document.getElementById('offset').value);
-
+  if(offset ==''){
+    alert('No has ingresado un número de desplazamiento');
+  }
   const mensajito = window.cipher.encode(offset, mensajeCifrado);
   mnsjEncriptado.innerHTML = mensajito;
 })

@@ -1,3 +1,101 @@
+#"Cyber Secrets"
+
+Un "Cyber Secret" funciona con un encriptado llamado "Cifrado César".
+Si. ¡Exacto, como el emperador Romano!. 
+Su historia tiene que ver con la necesidad de transmitir mensajes secretos en el campo de batalla,que el enemigo no pudiera interpretar.
+[cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher).
+
+El cifrado César es una de las técnicas más simples para cifrar un mensaje. 
+Es un tipo de cifrado por sustitución, 
+es decir que cada letra del texto original es reemplazada
+por otra que se encuentra un número fijo de posiciones (desplazamiento) 
+más adelante en el mismo alfabeto.
+Por ejemplo, si usamos un desplazamiento de 3 posiciones:
+
+- La letra A se cifra como D.
+- La palabra CASA se cifra como FDVD.
+
+¡Súper Sencillo! Pero efectivo.
+
+¡Así que ya sabes como funciona!
+Ingresa tu mensaje, elije tu desplazamiento y empieza a 
+comunicarte de una manera secreta con quién tú quieras. 
+¡Olvídate de que alguien más pueda leer tus conversaciones!.
+
+#¿Cómo comenzar a trabajar?
+Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
+repositorio que contiene el _boilerplate_.
+
+#Consideraciones Técnicas.
+
+Para que el _boilerplate_ funcione correctamente necesitas tener descargado Node.js y Git.
+El _boilerplate_ incluye tests (pruebas) de ejemplo como punto de partida.
+El _boilerplate_ contiene una estructura de archivos como punto de partida así
+como toda la configuración de dependencias y tests de ejemplo:
+
+```text
+./
+├── .editorconfig
+├── .eslintrc
+├── .gitignore
+├── README.md
+├── package.json
+├── src
+│   ├── cipher.js
+│   ├── index.html
+│   ├── index.js
+│   └── style.css
+└── test
+    ├── cipher.spec.js
+    ├── headless.js
+    └── index.html
+```
+
+La lógica de "Cyber Secrets" está implementada en JavaScript (ES6).
+En este proyecto **NO** se utilizaron librerías o frameworks, sólo
+[vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
+
+#Las pruebas unitarias
+
+El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
+[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
+`JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
+automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
+`npm run test`.
+Los test se ejecutan desde la terminal de tu máquina.
+
+En el caso de `JavaScript` estamos usando un archivo de
+configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
+información sobre: qué version de JavaScript/ECMAScript, el
+entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
+En cuanto a reglas/guías de estilo en sí,
+usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
+
+#User Experience (UX) y Diseño
+Si quieres conocer más acerca del proceso de diseño y UX de "Cyber Secrets"
+ingresa a esta liga.
+[Google Document(https://docs.google.com/document/d/1t85jjy19hQM7MPoeYAQ0Vor4GDjtI-coAV4E7HK1sjA/edit)]
+
+#Autor
+Karla Lorena Bellacetin Guido
+
+#Contribuciones 
+Diego Velez
+Shirley-starley
+Lupo Montero
+Developer Vilchez
+Gapox
+
+#Agradecimientos
+A mis compañeras de Squad gracias por su apoyo y paciencia, por su dispocisión y trabajo en equipo. Por que sin su ayuda no hubiera logrado este avance a tiempo.
+A mis coaches, gracias por su apoyo, por entender nuestros procesos y acompañarnos con una sonrisa.
+
+
+
+
+
+
+
 # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.

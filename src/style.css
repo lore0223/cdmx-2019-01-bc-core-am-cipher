@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Overlock');
+@import url('https://fonts.googleapis.com/css?family=Crete+Round');
 
 
 .hideElement{
@@ -40,7 +41,7 @@ header{
     color: #251124;
   }
 
-  textarea{
+  .textarea1{
       width: 35%;
       float:left;
       background: url(https://st.depositphotos.com/1020422/3440/i/950/depositphotos_34400753-stock-photo-brown-letter-on-wooden-table.jpg);
@@ -49,8 +50,9 @@ header{
       padding:30px;
       margin-top:30px;
       margin-left:50px;
-      font-family: 'Overlock', cursive;
-      font-size: 16px;
+      font-family: 'Crete Round', serif;
+      font-size: 15px;
+
   }
   #introduccion{
       width: 35%;
